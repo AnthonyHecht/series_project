@@ -33,7 +33,9 @@ app.use("/medias", express.static(path.join(__dirname, "medias")));
 
 //Routes
 const userRouter = require("./router/user");
+const seriesRouter = require("./router/series")
 
 app.use("/api/user", userRouter);
+app.use("/api/series", seriesRouter);
 
 module.exports = app;    
