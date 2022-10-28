@@ -1,5 +1,5 @@
 const express = require("express");
-const router = express.router();
+const router = express.Router();
 
 const serieCtrl = require("../controllers/series")
 const auth = require("../middleware/auth")

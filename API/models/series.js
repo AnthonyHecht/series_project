@@ -6,7 +6,8 @@ const seriesSchema = new mongoose.Schema(
         title: { type: String },
         description: { type: String },
         commentaire: { type: String },
-        id: { type: String }
+        id: { type: String },
+        tier: { type: String}
     }
 );
 
