@@ -22,8 +22,7 @@ const userSchema = new mongoose.Schema(
       required: true,
     },
     role: { type: String, default: "user" },
-  },
-  { timestamps: true }
+  }
 );
 
 userSchema.plugin(uniqueValidator);

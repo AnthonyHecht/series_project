@@ -5,6 +5,7 @@ const userCtrl = require("../controllers/user");
 const auth = require("../middleware/auth");
 
 //login logout routes
+router.post("/signup", userCtrl.signup);
 router.post("/login", userCtrl.login);
 router.get("/logout", userCtrl.logout);
 
