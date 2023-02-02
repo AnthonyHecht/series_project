@@ -2,9 +2,9 @@ import React from 'react';
 
 const Side = () => {
     return (
-        <side classname='side'>
-                <h2>filter side</h2>
-        </side>
+        <div className='side'>
+                <h2>Categories</h2>
+        </div>
     )
 };
 
