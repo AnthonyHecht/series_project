@@ -1,9 +1,14 @@
 import React from 'react';
+import Categories from './Categories';
 
-const Side = () => {
+const Side = ({ categories, setActiveCategory, activeCategory }) => {
     return (
         <div className='side'>
-                <h2>Categories</h2>
+                <Categories 
+                    categories={categories}
+				    setActiveCategory={setActiveCategory}
+				    activeCategory={activeCategory}
+                />
         </div>
     )
 };

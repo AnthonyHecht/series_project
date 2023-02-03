@@ -1,12 +1,13 @@
 import React from 'react';
-import Section from './Section'
 import List from './List'
 
-const Main = () => {
+const Main = ({ activeCategory, categories }) => {
     return (
         <main className='main'>
-            <Section />
-            <List />
+            <List 
+                activeCategory={activeCategory}
+                categories={categories}
+            />
         </main>
     )
 }
