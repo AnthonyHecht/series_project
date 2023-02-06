@@ -16,7 +16,7 @@ const Card = ({ cover, name, note, description, setSerieSelected, serieSelected 
         <li className='card' onClick={() => setSerieSelected(name)}>
                 <img className='card-cover' src={cover} alt={`${name} cover`} />
                 <div className='card-name'>{name}</div>
-                <div className='card-note'>{note}tier</div>
+                <div className='card-note'>{note} tier</div>
         </li>
     )}
         
