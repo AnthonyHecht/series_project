@@ -72,7 +72,7 @@ export const CardList = [
         name: 'camera café',
         note: 'B',
         description: '',
-        category: 'comedie',
+        category: 'comédie',
         cover: supernatural
     },{
         name: 'Orange is The New Black',
@@ -91,6 +91,60 @@ export const CardList = [
         note: 'B',
         description: '',
         category: 'prison',
+        cover: supernatural
+    },{
+        name: 'The 100',
+        note: 'F',
+        description: '',
+        category: 'science-fiction',
+        cover: supernatural
+    },{
+        name: 'Dr House',
+        note: 'A',
+        description: '',
+        category: 'médical',
+        cover: supernatural
+    },{
+        name: 'Grimm',
+        note: 'B',
+        description: '',
+        category: 'surnaturel',
+        cover: supernatural
+    },{
+        name: 'How I Met Your Mother',
+        note: 'B',
+        description: '',
+        category: 'comédie',
+        cover: supernatural
+    },{
+        name: 'American Dad',
+        note: 'B',
+        description: '',
+        category: 'animation',
+        cover: supernatural
+    },{
+        name: 'Murder',
+        note: 'F',
+        description: '',
+        category: 'thriller',
+        cover: supernatural
+    },{
+        name: 'Locke And Key',
+        note: 'E',
+        description: '',
+        category: 'surnaturel',
+        cover: supernatural
+    },{
+        name: 'Umbrella Academy',
+        note: 'D',
+        description: '',
+        category: 'surnaturel',
+        cover: supernatural
+    },{
+        name: 'Scrubs',
+        note: 'A',
+        description: '',
+        category: 'médical',
         cover: supernatural
     },
 

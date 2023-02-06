@@ -6,7 +6,7 @@ import Card from './Card'
 const List = ({ activeCategory }) => {
 
     return (
-        <div>
+        <div className='card-list-wrapper'>
             <ul className='card-list'>
                     {CardList.map(({ name, note, cover, category }) => 
                     !activeCategory || activeCategory === category ? (

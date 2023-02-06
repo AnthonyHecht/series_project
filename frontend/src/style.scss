@@ -72,6 +72,7 @@ header {
     display: flex;
     background-color: grey;
     width: 100%;
+    height: 867px;
 }
 
 .footer{
@@ -86,6 +87,10 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.card-list-wrapper{
+    overflow: hidden auto;
 }
 
 .card{
@@ -106,4 +111,8 @@ header {
 
 .card-name{
     font-weight: bold;
+}
+
+.card-plain{
+    position: 50vh 50vh;
 }
