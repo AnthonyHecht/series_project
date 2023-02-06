@@ -13,6 +13,7 @@ const Home = () => {
             acc.includes(elem.category) ? acc : acc.concat(elem.category),
             []
     )
+    const[isSelected, setSelect] = useState('')
     return (
         <>
         <Header />
@@ -25,6 +26,8 @@ const Home = () => {
             <Main 
                 categories={categories}
 				activeCategory={activeCategory}
+                isSelected={isSelected}
+                setSelect={setSelect}
             />
         </div>        
         <Footer />

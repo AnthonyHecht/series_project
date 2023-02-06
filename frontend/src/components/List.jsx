@@ -3,7 +3,7 @@ import { CardList } from '../datas/CardList';
 import Card from './Card'
 
 
-const List = ({ activeCategory }) => {
+const List = ({ activeCategory, isSelected, setSelect }) => {
 
     return (
         <div className='card-list-wrapper'>
@@ -11,7 +11,11 @@ const List = ({ activeCategory }) => {
                     {CardList.map(({ name, note, cover, category }) => 
                     !activeCategory || activeCategory === category ? (
                     <div key={name}>
-                        <Card cover={cover} name={name} note={note}/>
+                        <Card  
+                        cover={cover} name={name} note={note}
+                        isSelected={isSelected}
+                        setSelect={setSelect}
+                        />
                     </div>
                     ) : null
                     )}
