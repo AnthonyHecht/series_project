@@ -73,7 +73,7 @@ header {
     flex-direction: column;
     background-color: grey;
     width: 100%;
-    height: 867px;
+    height: 100%;
 }
 
 .footer{
@@ -98,7 +98,6 @@ header {
 .reco-list {
     display: flex;
     flex-direction: row;
-    height: 100px;
     overflow: auto;
     overflow-y: hidden;
 }

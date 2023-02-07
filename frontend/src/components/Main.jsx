@@ -1,11 +1,11 @@
 import React from 'react'
 import List from './List'
-import Reco from './Reco'
+/* import Reco from './Reco' */
 
 const Main = ({ activeCategory, categories }) => {
     return (
         <main className='main'>
-            <Reco/>
+            {/* <Reco/> */}
             <List 
                 activeCategory={activeCategory}
                 categories={categories}
