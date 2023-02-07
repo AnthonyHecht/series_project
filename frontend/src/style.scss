@@ -11,7 +11,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-header {
+.header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,6 +36,31 @@ header {
         inset #bfe5f7 0 0 0 22px;
     text-shadow: 3px 3px 1px #bfe1f7;    
 }
+.header-dark{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    padding: 15px;
+    background: #000000;
+    font-family: Montserrat, sans-serif;;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 40px;
+    box-shadow:
+	    inset #005f96 0 0 0 5px, 
+        inset #05659c 0 0 0 1px, 
+        inset #0c79ab 0 0 0 10px, 
+        inset #1f7ebd 0 0 0 11px, 
+        inset #8cd1ff 0 0 0 16px, 
+        inset #48b8e4 0 0 0 17px, 
+        inset #e5f9f7 0 0 0 21px, 
+        inset #bfe5f7 0 0 0 22px;
+    text-shadow: 3px 3px 1px #bfe1f7;
+}
 
 .mid_container{
     display: flex;
@@ -45,8 +70,9 @@ header {
 
 .side {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     width: 200px;
     padding: 15px;
     background: #fff;
@@ -67,11 +93,43 @@ header {
         inset #bfe5f7 0 0 0 22px;
     text-shadow: 3px 3px 1px #bfe1f7;
 }
+.side-dark {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 200px;
+    padding: 15px;
+    background: black;
+    font-family: Montserrat, sans-serif;;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    color: white;
+    padding: 40px;
+    box-shadow:
+	    inset #005f96 0 0 0 5px, 
+        inset #05659c 0 0 0 1px, 
+        inset #0c79ab 0 0 0 10px, 
+        inset #1f7ebd 0 0 0 11px, 
+        inset #8cd1ff 0 0 0 16px, 
+        inset #48b8e4 0 0 0 17px, 
+        inset #e5f9f7 0 0 0 21px, 
+        inset #bfe5f7 0 0 0 22px;
+    text-shadow: 3px 3px 1px #bfe1f7;
+}
 
 .main{
     display: flex;
     flex-direction: column;
     background-color: grey;
+    width: 100%;
+    height: 100%;
+}
+.main-dark{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
     width: 100%;
     height: 100%;
 }
@@ -81,6 +139,13 @@ header {
     flex-direction: column;
     align-items: center;
     background-color: bisque;
+    height: 90px;
+}
+.footer-dark{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
     height: 90px;
 }
 
@@ -112,6 +177,17 @@ header {
     border-radius: 0.5em;
     overflow: hidden;
 }
+.card-dark{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(107, 107, 107);
+    margin: 10px 30px 10px 30px;
+    border: 2px solid gray;
+    border-radius: 0.5em;
+    overflow: hidden;
+    color: white;
+}
 
 .card-cover{
     height: 280px;
@@ -137,6 +213,22 @@ header {
     align-items: center;
 }
 
+.card-plain-dark{
+    z-index: 1;
+    height: 100vh;
+    width: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(5px);
+    background-color: rgb(63, 63, 63);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
 .card-plain-cover {
     width: 70%;
     height: 70%;
@@ -153,4 +245,27 @@ header {
     height: 100px;
     overflow: auto;
     overflow-y: hidden;
+}
+
+.lightSwitch {
+    background-color: #6899f5;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.randomButton {
+    background-color: #48abe0;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 31px;
+    height: 100px;
+    width: 100px;
+    box-shadow: 0 2px 4px darkslategray;
+    border-radius: 70%;
 }

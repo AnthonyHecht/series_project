@@ -1,6 +1,8 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import { darkModeContext } from '../context/DarkMode'
 
 const Card = ({ cover, name, note, description, setSerieSelected, serieSelected }) => {
+    const {darkMode} = useContext(darkModeContext)
 
    if(serieSelected === name) {
     return (
@@ -13,7 +15,7 @@ const Card = ({ cover, name, note, description, setSerieSelected, serieSelected 
         </div>
         )} else {
     return (
-        <li className='card' onClick={() => setSerieSelected(name)}>
+        <li className={darkMode? 'card-dark' : 'card'} onClick={() => setSerieSelected(name)}>
                 <img className='card-cover' src={cover} alt={`${name} cover`} />
                 <div className='card-name'>{name}</div>
                 <div className='card-note'>{note} tier</div>
