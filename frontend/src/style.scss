@@ -63,6 +63,15 @@ body {
     text-shadow: 3px 3px 1px #bfe1f7;
 }
 
+header > ul > li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.header-dark a {
+    color: rgb(131, 168, 211);
+}
+
 .mid_container{
     display: flex;
     flex-direction: row;
@@ -236,8 +245,7 @@ body {
 }
 
 .card-btn {
-    height: 25px;
-    width: 25px;
+    border: 2px solid black;
 }
 
 .reco-list {

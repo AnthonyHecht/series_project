@@ -6,12 +6,12 @@ const Card = ({ cover, name, note, description, setSerieSelected, serieSelected 
 
    if(serieSelected === name) {
     return (
-            <div className='card-plain'>
+            <div className={darkMode? 'card-plain-dark' : 'card-plain'}>
                 <img className='card-plain-cover' src={cover} alt={`${name} cover`} />
                 <div className='card-plain-name'>{name}</div>
                 <div className='card-plain-note'>{note} tier</div>
                 <div className='card-plain-desc'>{description}</div>
-                <button onClick={() => setSerieSelected('')} className='card-btn'>X</button>
+                <button onClick={() => setSerieSelected('')} className='card-btn'>Fermer</button>
         </div>
         )} else {
     return (
