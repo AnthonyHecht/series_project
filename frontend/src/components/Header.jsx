@@ -1,16 +1,20 @@
 import React, { useContext } from 'react';
-/* import Nav from "./Nav"; */
 import { darkModeContext } from '../context/DarkMode'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const {darkMode} = useContext(darkModeContext)
     return (
         <header className={darkMode? 'header-dark' : 'header'}>
-            <div>
-                <h1> Series project </h1>
-            </div>
+            <ul>
+                <li>
+                    <Link to='/home'>Serie</Link>
+                </li>
+                <li>
+                    <Link to='/movie'>Movie</Link>
+                </li>
+            </ul>
             
-            {/* <Nav /> */}
         </header>
     )
 }
